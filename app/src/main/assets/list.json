@@ -1,0 +1,407 @@
+{
+  "formId": 8,
+  "patientId": "452491112020523771593413062387",
+  "questions": [
+    {
+      "answers": [
+        {
+          "answerId": 136,
+          "questionId": 82,
+          "formId": 8,
+          "answer": "15",
+          "patientId": "452491112020523771593413062387",
+          "createdBy": 2052,
+          "updatedBy": 2052,
+          "createdTs": 1593686681000,
+          "updatedTs": 1593686681000,
+          "dataObservationTs": "1593686903000",
+          "active": true
+        },
+        {
+          "answerId": 128,
+          "questionId": 82,
+          "formId": 8,
+          "answer": "15",
+          "patientId": "452491112020523771593413062387",
+          "createdBy": 2052,
+          "updatedBy": 2052,
+          "createdTs": 1593593656000,
+          "updatedTs": 1593593656000,
+          "dataObservationTs": "1593593894000",
+          "active": true
+        },
+        {
+          "answerId": 123,
+          "questionId": 82,
+          "formId": 8,
+          "answer": "13",
+          "patientId": "452491112020523771593413062387",
+          "createdBy": 2052,
+          "updatedBy": 2052,
+          "createdTs": 1593426975000,
+          "updatedTs": 1593426975000,
+          "dataObservationTs": "1593427238000",
+          "active": true
+        }
+      ],
+      "question_title": "Age of first period (Years)"
+    },
+    {
+      "answers": [
+        {
+          "answerId": 137,
+          "questionId": 83,
+          "formId": 8,
+          "answer": "30",
+          "patientId": "452491112020523771593413062387",
+          "createdBy": 2052,
+          "updatedBy": 2052,
+          "createdTs": 1593686681000,
+          "updatedTs": 1593686681000,
+          "dataObservationTs": "1593686903000",
+          "active": true
+        },
+        {
+          "answerId": 129,
+          "questionId": 83,
+          "formId": 8,
+          "answer": "28",
+          "patientId": "452491112020523771593413062387",
+          "createdBy": 2052,
+          "updatedBy": 2052,
+          "createdTs": 1593593656000,
+          "updatedTs": 1593593656000,
+          "dataObservationTs": "1593593894000",
+          "active": true
+        },
+        {
+          "answerId": 124,
+          "questionId": 83,
+          "formId": 8,
+          "answer": "20",
+          "patientId": "452491112020523771593413062387",
+          "createdBy": 2052,
+          "updatedBy": 2052,
+          "createdTs": 1593426975000,
+          "updatedTs": 1593426975000,
+          "dataObservationTs": "1593427238000",
+          "active": true
+        }
+      ],
+      "question_title": "If your menstrual periods are regular; After how many days periods starts?"
+    },
+    {
+      "answers": [
+        {
+          "answerId": 138,
+          "questionId": 84,
+          "formId": 8,
+          "answer": "15",
+          "patientId": "452491112020523771593413062387",
+          "createdBy": 2052,
+          "updatedBy": 2052,
+          "createdTs": 1593686681000,
+          "updatedTs": 1593686681000,
+          "dataObservationTs": "1593686903000",
+          "active": true
+        },
+        {
+          "answerId": 130,
+          "questionId": 84,
+          "formId": 8,
+          "answer": "10",
+          "patientId": "452491112020523771593413062387",
+          "createdBy": 2052,
+          "updatedBy": 2052,
+          "createdTs": 1593593656000,
+          "updatedTs": 1593593656000,
+          "dataObservationTs": "1593593894000",
+          "active": true
+        },
+        {
+          "answerId": 125,
+          "questionId": 84,
+          "formId": 8,
+          "answer": "35",
+          "patientId": "452491112020523771593413062387",
+          "createdBy": 2052,
+          "updatedBy": 2052,
+          "createdTs": 1593426975000,
+          "updatedTs": 1593426975000,
+          "dataObservationTs": "1593427238000",
+          "active": true
+        }
+      ],
+      "question_title": "If your menstrual periods are irregular; Between how many days periods starts? (e.g., 12 to 60)"
+    },
+    {
+      "answers": [
+        {
+          "answerId": 139,
+          "questionId": 85,
+          "formId": 8,
+          "answer": "5",
+          "patientId": "452491112020523771593413062387",
+          "createdBy": 2052,
+          "updatedBy": 2052,
+          "createdTs": 1593686681000,
+          "updatedTs": 1593686681000,
+          "dataObservationTs": "1593686903000",
+          "active": true
+        },
+        {
+          "answerId": 131,
+          "questionId": 85,
+          "formId": 8,
+          "answer": "5",
+          "patientId": "452491112020523771593413062387",
+          "createdBy": 2052,
+          "updatedBy": 2052,
+          "createdTs": 1593593656000,
+          "updatedTs": 1593593656000,
+          "dataObservationTs": "1593593894000",
+          "active": true
+        },
+        {
+          "answerId": 126,
+          "questionId": 85,
+          "formId": 8,
+          "answer": "8",
+          "patientId": "452491112020523771593413062387",
+          "createdBy": 2052,
+          "updatedBy": 2052,
+          "createdTs": 1593426975000,
+          "updatedTs": 1593426975000,
+          "dataObservationTs": "1593427238000",
+          "active": true
+        }
+      ],
+      "question_title": "Duration of bleeding in days"
+    },
+    {
+      "answers": [
+        {
+          "answerId": 140,
+          "questionId": 86,
+          "formId": 8,
+          "answer": "No",
+          "patientId": "452491112020523771593413062387",
+          "createdBy": 2052,
+          "updatedBy": 2052,
+          "createdTs": 1593686681000,
+          "updatedTs": 1593686681000,
+          "dataObservationTs": "1593686903000",
+          "active": true
+        },
+        {
+          "answerId": 132,
+          "questionId": 86,
+          "formId": 8,
+          "answer": "Yes",
+          "patientId": "452491112020523771593413062387",
+          "createdBy": 2052,
+          "updatedBy": 2052,
+          "createdTs": 1593593656000,
+          "updatedTs": 1593593656000,
+          "dataObservationTs": "1593593894000",
+          "active": true
+        },
+        {
+          "answerId": 127,
+          "questionId": 86,
+          "formId": 8,
+          "answer": "",
+          "patientId": "452491112020523771593413062387",
+          "createdBy": 2052,
+          "updatedBy": 2052,
+          "createdTs": 1593426975000,
+          "updatedTs": 1593426975000,
+          "dataObservationTs": "1593427238000",
+          "active": true
+        }
+      ],
+      "question_title": "Does bleeding or spotting occur between periods?"
+    },
+    {
+      "answers": [
+        {
+          "answerId": 141,
+          "questionId": 87,
+          "formId": 8,
+          "answer": "Yes",
+          "patientId": "452491112020523771593413062387",
+          "createdBy": 2052,
+          "updatedBy": 2052,
+          "createdTs": 1593686681000,
+          "updatedTs": 1593686681000,
+          "dataObservationTs": "1593686903000",
+          "active": true
+        },
+        {
+          "answerId": 133,
+          "questionId": 87,
+          "formId": 8,
+          "answer": "No",
+          "patientId": "452491112020523771593413062387",
+          "createdBy": 2052,
+          "updatedBy": 2052,
+          "createdTs": 1593593656000,
+          "updatedTs": 1593593656000,
+          "dataObservationTs": "1593593895000",
+          "active": true
+        },
+        {
+          "answerId": 128,
+          "questionId": 87,
+          "formId": 8,
+          "answer": "Yes",
+          "patientId": "452491112020523771593413062387",
+          "createdBy": 2052,
+          "updatedBy": 2052,
+          "createdTs": 1593426975000,
+          "updatedTs": 1593426975000,
+          "dataObservationTs": "1593427238000",
+          "active": true
+        }
+      ],
+      "question_title": "Does bleeding or spotting occur after intercourse?"
+    },
+    {
+      "answers": [
+        {
+        "answerId": 142,
+        "questionId": 89,
+        "formId": 8,
+        "answer": "4/06/2020",
+        "patientId": "452491112020523771593413062387",
+        "createdBy": 2052,
+        "updatedBy": 2052,
+        "createdTs": 1593686681000,
+        "updatedTs": 1593686681000,
+        "dataObservationTs": "1593686903000",
+        "active": true
+        },
+        {
+          "answerId": 134,
+          "questionId": 89,
+          "formId": 8,
+          "answer": "10/06/2020",
+          "patientId": "452491112020523771593413062387",
+          "createdBy": 2052,
+          "updatedBy": 2052,
+          "createdTs": 1593593656000,
+          "updatedTs": 1593593656000,
+          "dataObservationTs": "1593593895000",
+          "active": true
+        },
+        {
+          "answerId": 129,
+          "questionId": 88,
+          "formId": 8,
+          "answer": "",
+          "patientId": "452491112020523771593413062387",
+          "createdBy": 2052,
+          "updatedBy": 2052,
+          "createdTs": 1593426975000,
+          "updatedTs": 1593426975000,
+          "dataObservationTs": "1593427238000",
+          "active": true
+        }
+      ],
+      "question_title": "First day of last menstrual period"
+    },
+    {
+      "answers": [
+        {
+          "answerId": 142,
+          "questionId": 89,
+          "formId": 8,
+          "answer": "Yes",
+          "patientId": "452491112020523771593413062387",
+          "createdBy": 2052,
+          "updatedBy": 2052,
+          "createdTs": 1593686681000,
+          "updatedTs": 1593686681000,
+          "dataObservationTs": "1593686903000",
+          "active": true
+        },
+        {
+          "answerId": 134,
+          "questionId": 89,
+          "formId": 8,
+          "answer": "Yes",
+          "patientId": "452491112020523771593413062387",
+          "createdBy": 2052,
+          "updatedBy": 2052,
+          "createdTs": 1593593656000,
+          "updatedTs": 1593593656000,
+          "dataObservationTs": "1593593895000",
+          "active": true
+        },
+        {
+          "answerId": 130,
+          "questionId": 89,
+          "formId": 8,
+          "answer": "No",
+          "patientId": "452491112020523771593413062387",
+          "createdBy": 2052,
+          "updatedBy": 2052,
+          "createdTs": 1593426975000,
+          "updatedTs": 1593426975000,
+          "dataObservationTs": "1593427238000",
+          "active": true
+        }
+      ],
+      "question_title": "Is pain associated with periods?"
+    },
+    {
+      "answers": [
+        {
+          "answerId": 143,
+          "questionId": 90,
+          "formId": 8,
+          "answer": "before menses",
+          "patientId": "452491112020523771593413062387",
+          "createdBy": 2052,
+          "updatedBy": 2052,
+          "createdTs": 1593686681000,
+          "updatedTs": 1593686681000,
+          "dataObservationTs": "1593686903000",
+          "active": true
+        },
+        {
+          "answerId": 135,
+          "questionId": 90,
+          "formId": 8,
+          "answer": "before and after menses",
+          "patientId": "452491112020523771593413062387",
+          "createdBy": 2052,
+          "updatedBy": 2052,
+          "createdTs": 1593593656000,
+          "updatedTs": 1593593656000,
+          "dataObservationTs": "1593593895000",
+          "active": true
+        },
+        {
+          "answerId": 131,
+          "questionId": 90,
+          "formId": 8,
+          "answer": "None",
+          "patientId": "452491112020523771593413062387",
+          "createdBy": 2052,
+          "updatedBy": 2052,
+          "createdTs": 1593426975000,
+          "updatedTs": 1593426975000,
+          "dataObservationTs": "1593427238000",
+          "active": true
+        }
+      ],
+      "question_title": "If yes then, is it:"
+    }
+  ],
+  "answer_dates": [
+    "01/Jul/2020",
+    "02/Jul/2020",
+    "29/Jun/2020"
+  ]
+}
