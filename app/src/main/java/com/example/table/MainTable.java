@@ -123,11 +123,13 @@ public class MainTable extends Activity {
         //        private ArrayList<String> dateList;
         Context contextl;
         List<ColumnHeader> mdates;
-        List<RowHeader> questions;
-        List<List<Cell>> answers;
+        List<RowHeader> mquestions;
+        List<List<Cell>> manswers;
         ArrayList<String> arrayList;
         ArrayList<CheckBox> mCheckBoxes = new ArrayList<CheckBox>();
         private final String[] headers;
+        private final String[][] ans;
+        private final String[] ques;
         CheckBox cb;
         TableViewModel model;
 
@@ -142,8 +144,8 @@ public class MainTable extends Activity {
         public TableAdapter(Context context, List<ColumnHeader> dates, List<RowHeader> questions, List<List<Cell>> answers) {
             this.contextl = context;
             this.mdates = dates;
-            this.questions = questions;
-            this.answers = answers;
+            this.mquestions = questions;
+            this.manswers = answers;
             arrayList = new ArrayList<>();
             model = new TableViewModel(context);
 //        public TableAdapter(Context context, TableViewModel tableViewModel) {
@@ -159,6 +161,21 @@ public class MainTable extends Activity {
 //                headers[i + 1] = mdates.get(i).getAnswersList().get(i).getDataObservationTs();
                 headers[i] = mdates.get(i).getData().toString();
             }
+            ques = new String[mquestions.size()];
+
+            for (int j = 0; j < mquestions.size()  ; j++) {
+//                headers[i + 1] = mdates.get(i).getAnswersList().get(i).getDataObservationTs();
+                ques[j] = mquestions.get(j).getData().toString();
+            }
+
+            ans = new String[mquestions.size()][mdates.size()];
+            for (int i =0; i < mquestions.size(); i++){
+                for (int j =0; j< mdates.size(); j++){
+                    ans[i][j] = manswers.get(i).get(j).getAnswer();
+              }
+            }
+
+
         }
 //
 
@@ -338,11 +355,13 @@ public class MainTable extends Activity {
             convertView.setBackgroundResource(row % 2 == 0 ? R.drawable.bg_table_color1 : R.drawable.bg_table_color2);
 //            for (int i = 0; i<dates.size() + 1; i++) {
 //                ((TextView) convertView.findViewById(android.R.id.text1)).setText((CharSequence) getDevice(row).data[column + 1]);
-                ((TextView) convertView.findViewById(android.R.id.text1)).setText(answers.get(row).get(column).getAnswer());
+
+            TextView textView = (TextView) convertView.findViewById(android.R.id.text1);
+            textView.setText(answers.get(row).get(column).getAnswers().get(column).getAnswer());
 //                column++;
-            if (answers.get(row).get(column).getAnswer().isEmpty()){
-                ((TextView) convertView.findViewById(android.R.id.text1)).setText("NIL");
-            }
+//            if (answers.get(row).get(column).getAnswer().isEmpty()){
+//                ((TextView) convertView.findViewById(android.R.id.text1)).setText("NIL");
+//            }
 //            }
 //            row++;
             return convertView;
