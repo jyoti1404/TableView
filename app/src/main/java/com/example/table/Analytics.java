@@ -42,11 +42,11 @@ public class Analytics extends AppCompatActivity {
         dates.add(intent.getStringExtra("date2"));
         dates.add(intent.getStringExtra("date3"));
         Bundle args = intent.getBundleExtra("BUNDLE");
-        ArrayList<String > object = (ArrayList<String>) args.getSerializable("ARRAYLIST");
-        answerslist.add(object);
+//        ArrayList<String > object = (ArrayList<String>) args.getSerializable("ARRAYLIST");
+//        answerslist.add(object);
 
         barChart.setVisibility(View.VISIBLE);
-        createChart();
+//        createChart();
         barChart.getAxisRight().setDrawLabels(false);
         barChart.setDescription("");
         barChart.getXAxis().setPosition(XAxis.XAxisPosition.BOTTOM);

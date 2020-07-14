@@ -333,12 +333,12 @@ public class SimpleTable<T> extends Activity {
     private void changeActivity() {
 
         final Intent intent = new Intent(SimpleTable.this, Analytics.class);
-        intent.putExtra("date1", arrayListDates.get(0));
-        intent.putExtra("date2", arrayListDates.get(1));
-        intent.putExtra("date3", arrayListDates.get(2));
-        Bundle args = new Bundle();
-        args.putSerializable("ARRAYLIST",(Serializable)arrayList);
-        intent.putExtra("BUNDLE",args);
+//        intent.putExtra("date1", arrayListDates.get(0));
+//        intent.putExtra("date2", arrayListDates.get(1));
+//        intent.putExtra("date3", arrayListDates.get(2));
+//        Bundle args = new Bundle();
+//        args.putSerializable("ARRAYLIST",(Serializable)arrayList);
+//        intent.putExtra("BUNDLE",args);
         startActivity(intent);
     }
 }

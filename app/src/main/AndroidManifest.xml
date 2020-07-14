@@ -22,13 +22,7 @@
             android:name=".SimpleTable"
             android:label="@string/simple_adapter"></activity>
         <activity
-            android:name=".StyleTable"
-            android:label="@string/style_adapter"></activity>
-        <activity
             android:name=".MainTable"
-            android:label="@string/main_adapter"></activity>
-        <activity
-            android:name=".FamilyTable"
             android:label="@string/main_adapter"></activity>
     </application>
 

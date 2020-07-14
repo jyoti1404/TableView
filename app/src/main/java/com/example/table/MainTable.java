@@ -110,10 +110,10 @@ public class MainTable extends Activity {
     private void changeActivity() {
 
         final Intent intent = new Intent(MainTable.this, Analytics.class);
-        Bundle args = new Bundle();
-        args.putSerializable("yAxis", arrayListAll);
-        args.putSerializable("xAxis", (Serializable) arrayListDates);
-        intent.putExtra("BUNDLE",args);
+//        Bundle args = new Bundle();
+//        args.putSerializable("yAxis", arrayListAll);
+//        args.putSerializable("xAxis", (Serializable) arrayListDates);
+//        intent.putExtra("BUNDLE",args);
         startActivity(intent);
     }
 
