@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.inputmethodservice.Keyboard;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
@@ -122,6 +123,7 @@ public class MainTable extends Activity {
 
         //        private ArrayList<String> dateList;
         Context contextl;
+        CheckBoxHolder checkBoxHolder;
         List<ColumnHeader> mdates;
         List<RowHeader> mquestions;
         List<List<Cell>> manswers;
@@ -221,7 +223,8 @@ public class MainTable extends Activity {
 
         private View getFirstHeader(int row, int column, View convertView, ViewGroup parent) {
             if (convertView == null) {
-                convertView = getLayoutInflater().inflate(R.layout.item_table_header_first, parent, false);
+                LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+                convertView = inflater.inflate(R.layout.item_table_header_first, parent, false);
             }
             ((TextView) convertView.findViewById(android.R.id.text1)).setText("Questions");
             return convertView;
@@ -229,7 +232,8 @@ public class MainTable extends Activity {
 
         private View getHeader(int row, int column, View convertView, ViewGroup parent) {
             if (convertView == null) {
-                convertView = getLayoutInflater().inflate(R.layout.item_table_header, parent, false);
+                LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+                convertView = inflater.inflate(R.layout.item_table_header, parent, false);
             }
 //            for (int i = 0; i < column - 1 ; i++) {
                 ((TextView) convertView.findViewById(android.R.id.text1)).setText(headers[column ]);
@@ -242,11 +246,15 @@ public class MainTable extends Activity {
 
         private View getFirstBody(int row, int column, View convertView, ViewGroup parent) {
             if (convertView == null) {
-                convertView = getLayoutInflater().inflate(R.layout.item_table_first, parent, false);
+                LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+                convertView = inflater.inflate(R.layout.item_table_first, parent, false);
             }
-            convertView.setBackgroundResource(row % 2 == 0 ? R.drawable.bg_table_color1 : R.drawable.bg_table_color2);
+
+            checkBoxHolder = new CheckBoxHolder(convertView, questions);
+            checkBoxHolder.getFirstBody(row, column, convertView, parent);
+//            convertView.setBackgroundResource(row % 2 == 0 ? R.drawable.bg_table_color1 : R.drawable.bg_table_color2);
 //            for (int i = 0; i<questions.size(); i++) {
-                ((CheckBox) convertView.findViewById(android.R.id.text1)).setText(questions.get(row).getData().toString());
+//                ((CheckBox) convertView.findViewById(android.R.id.text1)).setText(questions.get(row).getData().toString());
 //            ((CheckBox) convertView.findViewById(android.R.id.text1)).setChecked(false);
 
 //            RowHeader model = questions.get(row);
@@ -350,14 +358,15 @@ public class MainTable extends Activity {
 
         private View getBody(int row, int column, View convertView, ViewGroup parent) {
             if (convertView == null) {
-                convertView = getLayoutInflater().inflate(R.layout.item_table, parent, false);
+                LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+                convertView = inflater.inflate(R.layout.item_table, parent, false);
             }
-            convertView.setBackgroundResource(row % 2 == 0 ? R.drawable.bg_table_color1 : R.drawable.bg_table_color2);
-//            for (int i = 0; i<dates.size() + 1; i++) {
-//                ((TextView) convertView.findViewById(android.R.id.text1)).setText((CharSequence) getDevice(row).data[column + 1]);
 
             TextView textView = (TextView) convertView.findViewById(android.R.id.text1);
-            textView.setText(answers.get(row).get(column).getAnswers().get(column).getAnswer());
+            textView.setText(ans[row][column]);
+            if(textView.getText().toString().matches("")){
+                ((TextView) convertView.findViewById(android.R.id.text1)).setText("NIL");
+            }
 //                column++;
 //            if (answers.get(row).get(column).getAnswer().isEmpty()){
 //                ((TextView) convertView.findViewById(android.R.id.text1)).setText("NIL");

@@ -23,7 +23,9 @@
             android:label="@string/simple_adapter"></activity>
         <activity
             android:name=".MainTable"
-            android:label="@string/main_adapter"></activity>
+            android:label="@string/main_adapter">
+
+        </activity>
     </application>
 
 </manifest>
